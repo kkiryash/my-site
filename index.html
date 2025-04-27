@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Школа №10 м. Суми</title>
+  <style>
+    :root {
+      --primary-color: #4f46e5;
+      --background-color: #f9fafb;
+      --card-background: #ffffff;
+      --text-color: #111827;
+      --accent-color: #6366f1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      height: 300px;
+      background: url('https://files.ratelist.top/uploads/images/bs/318467/photos/88e0ec81953af644781c72c1a4152530-original.webp') no-repeat center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card-background);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      color: var(--accent-color);
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary-color);
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Школа №10</h1>
+  <p>м. Суми — місце знань і розвитку</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Про нас</h2>
+    <p>Школа №10 м. Суми — це сучасний заклад освіти, де кожен учень отримує якісні знання, розвиває свої таланти та будує майбутнє. Ми цінуємо кожного учня та створюємо комфортне середовище для навчання і творчості.</p>
+  </div>
+
+  <div class="card">
+    <h2>Наші переваги</h2>
+    <ul>
+      <li>Професійні та уважні вчителі</li>
+      <li>Інноваційні технології навчання</li>
+      <li>Гуртки, секції, наукові клуби</li>
+      <li>Тепла атмосфера і підтримка</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Контакти</h2>
+    <p><strong>Адреса:</strong> м. Суми, Україна</p>
+    <p><strong>Телефон:</strong> +38 (000) 000-00-00</p>
+    <p><strong>Email:</strong> info@school10.sumy.ua</p>
+  </div>
+
+  <div class="card">
+    <h2>Новини</h2>
+    <p>Слідкуйте за останніми подіями школи: нові проєкти, досягнення учнів та святкові заходи!</p>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Школа №10, м. Суми. Всі права захищено.
+</footer>
+
+</body>
+</html>
